@@ -5,9 +5,12 @@
 
 install.packages('faraway')
 install.packages("ggplot2")
+install.packages("dplyr")
 
 library(faraway)
 library(ggplot2)
+library(dplyr)
+
 data(nepali)
 
 nepali <- nepali %>%
