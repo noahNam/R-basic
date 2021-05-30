@@ -4,3 +4,22 @@ author: noah
 date: 2021/05/30
 output: html_document
 ---
+
+## 실습1
+```{r warning = FALSE, message = FALSE}
+install.packages('faraway', repos="http://cran.us.r-project.org")
+install.packages("ggplot2", repos="http://cran.us.r-project.org")
+install.packages("dplyr", repos="http://cran.us.r-project.org")
+
+library(dplyr); library(faraway);library(ggplot2)
+data(nepali)
+
+nepali <- nepali %>%
+  select(id, sex, wt, ht, age) %>%
+  mutate(id = factor(id),
+         sex = factor(sex, levels = c(1, 2),
+                      labels = c("male", "female"))) %>%
+  distinct(id, .keep_all = TRUE);
+
+ggplot(nepali, aes(x = ht)) + geom_histogram();
+```
