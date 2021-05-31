@@ -5,7 +5,7 @@ date: 2021/05/30
 output: html_document
 ---
 
-## 실습1
+## Practice #1
 ```{r warning = FALSE, message = FALSE}
 install.packages('faraway', repos="http://cran.us.r-project.org")
 install.packages("ggplot2", repos="http://cran.us.r-project.org")
@@ -24,12 +24,12 @@ nepali <- nepali %>%
 ggplot(nepali, aes(x = ht)) + geom_histogram();
 ```
 
-## 실습2
+## Practice #2
 ```{r warning = FALSE, message = FALSE}
 ggplot(nepali, aes(x = ht)) + geom_histogram(fill="lightblue", color="black")+ ggtitle("Height of children") + xlab("Height(cm)")+xlim(c(0,120));
 ```
 
-## 실습3
+## Practice #3
 ```{r warning = FALSE, message = FALSE}
 ggplot(nepali, aes(x = ht, y= wt)) + geom_point();
 ```
