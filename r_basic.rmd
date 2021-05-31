@@ -23,3 +23,13 @@ nepali <- nepali %>%
 
 ggplot(nepali, aes(x = ht)) + geom_histogram();
 ```
+
+## 실습2
+```{r warning = FALSE, message = FALSE}
+ggplot(nepali, aes(x = ht)) + geom_histogram(fill="lightblue", color="black")+ ggtitle("Height of children") + xlab("Height(cm)")+xlim(c(0,120));
+```
+
+## 실습3
+```{r warning = FALSE, message = FALSE}
+ggplot(nepali, aes(x = ht, y= wt)) + geom_point();
+```
