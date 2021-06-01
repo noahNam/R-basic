@@ -33,3 +33,8 @@ ggplot(nepali, aes(x = ht)) + geom_histogram(fill="lightblue", color="black")+ g
 ```{r warning = FALSE, message = FALSE}
 ggplot(nepali, aes(x = ht, y= wt)) + geom_point();
 ```
+
+## Practice #4
+```{r warning = FALSE, message = FALSE}
+ggplot(nepali, aes(x = ht, y= wt)) + geom_point(color="blue", size=0.5) + ggtitle("Weight versus Heigth") + xlab("Height(cm)")+ylab("Weight(kg)");
+```
