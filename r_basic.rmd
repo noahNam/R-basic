@@ -38,3 +38,8 @@ ggplot(nepali, aes(x = ht, y= wt)) + geom_point();
 ```{r warning = FALSE, message = FALSE}
 ggplot(nepali, aes(x = ht, y= wt)) + geom_point(color="blue", size=0.5) + ggtitle("Weight versus Heigth") + xlab("Height(cm)")+ylab("Weight(kg)");
 ```
+
+## Practice #5
+```{r warning = FALSE, message = FALSE}
+ggplot(nepali, aes(x = ht, y= wt, color=sex)) + geom_point(size=0.5) + ggtitle("Weight versus Heigth") + xlab("Height(cm)")+ylab("Weight(kg)");
+```
